@@ -1,152 +1,220 @@
-\chapter{My third chapter}
+\chapter{On the contributions of this work}
 
-% **************************** Define Graphics Path **************************
-\ifpdf
-    \graphicspath{{Chapter3/Figs/Raster/}{Chapter3/Figs/PDF/}{Chapter3/Figs/}}
-\else
-    \graphicspath{{Chapter3/Figs/Vector/}{Chapter3/Figs/}}
-\fi
+\section{Introduction}
+A detailed introduction presenting the motivation of this layout and work.
+Why do we start by collaboration first? We start very high to lower and lower
+level problems solving. At every level the solution proposed is open to change
+adaptation and high integration capability.
 
-\section{First section of the third chapter}
-And now I begin my third chapter here \dots
+\section{Reproducibility encriched collaboration}
+Collaboration mode explained. Yet also the value of adding things on top of CoRR.
+How the models can evolve. Backward compatibility. API implementation for applications.
+Integration Examples. Toolbox on top of CoRR: Data analytics, Visualization, Interoperability
+broker between Applications. Fundamental similarities between machine and computer based
+records. Privacy issues and transition to the next section.
+\subsection{Introduction}
+\subsection{Specification}
+\subsection{Limitations}
+\subsection{Implementation}
 
-And now to cite some more people~\citet{Rea85,Ancey1996}
+\section{Private Data and Code Discoverability}
+After this point we discuss solutions on how we effectively record investigations. What we capture.
+\subsection{Introduction}
+\subsection{Specification}
+\subsection{Limitations}
+\subsection{Implementation}
 
-\subsection{First subsection in the first section}
-\dots and some more 
+\section{Investigation Recording Toolbox}
+A command line and gui tool to record experimental and computational investigations data and
+metadata. corr-cmd. It is also very flexible. This toolbox has an easy to extend capability
+that allows the integration of new recording approaches but also for interoperability integration.
+The submited extension is tested then integrated and patched in the current release or the next one.
+\subsection{Introduction}
+\subsection{Specification}
+\subsection{Limitations}
+\subsection{Implementation}
 
-\subsection{Second subsection in the first section}
-\dots and some more \dots
+\section{A Unified Computational Environment Capturing Approach}
+We explain a critical feature in the precedent section for computational environment and the differences
+with machine ones. We address the fact that machine record requires strategies and leverage of a minimal
+protocol.
+\subsection{Introduction}
+\subsection{Specification}
+\subsection{Limitations}
+\subsection{Implementation}
 
-\subsubsection{First subsub section in the second subsection}
-\dots and some more in the first subsub section otherwise it all looks the same
-doesn't it? well we can add some text to it \dots
+\section{Reproducibility focused experimental Machine Interoperability Protocol}
+We try to propose a protocol that allows interoperability features but at the same time a needed design
+to allow reproducibility: Machine computational state accessible programmatically. An example is a 
+mechanical roller to set the temperature and a led screen display. The mechanical roll has to be infinite
+to allow programmatical consistency or loopback roll to the position. The best solution is having fully
+digital screens or softwares for User Interfaces to the machine to leverage the API.
+\subsection{Introduction}
+\subsection{Specification}
+\subsection{Limitations}
+\subsection{Implementation}
 
-\subsection{Third subsection in the first section}
-\dots and some more \dots
+\section{Numerical Caching}
+We investigated here an approach of recording the investigation atomic numerics during the execution.
+Which results in a heavier execution and trace. For the computation it will be the ALU sys calls and
+for the machine it will be also the ALU but the position and status of all the sensors, motors and 
+all electromechanical parts.
+\subsection{Introduction}
+\subsection{Specification}
+\subsection{Limitations}
+\subsection{Implementation}
 
-\subsubsection{First subsub section in the third subsection}
-\dots and some more in the first subsub section otherwise it all looks the same
-doesn't it? well we can add some text to it and some more and some more and
-some more and some more and some more and some more and some more \dots
-
-\subsubsection{Second subsub section in the third subsection}
-\dots and some more in the first subsub section otherwise it all looks the same
-doesn't it? well we can add some text to it \dots
-
-\section{Second section of the third chapter}
-and here I write more \dots
-
-\section{The layout of formal tables}
-This section has been modified from ``Publication quality tables in \LaTeX*''
- by Simon Fear.
-
-The layout of a table has been established over centuries of experience and 
-should only be altered in extraordinary circumstances. 
-
-When formatting a table, remember two simple guidelines at all times:
-
-\begin{enumerate}
-  \item Never, ever use vertical rules (lines).
-  \item Never use double rules.
-\end{enumerate}
-
-These guidelines may seem extreme but I have
-never found a good argument in favour of breaking them. For
-example, if you feel that the information in the left half of
-a table is so different from that on the right that it needs
-to be separated by a vertical line, then you should use two
-tables instead. Not everyone follows the second guideline:
-
-There are three further guidelines worth mentioning here as they
-are generally not known outside the circle of professional
-typesetters and subeditors:
-
-\begin{enumerate}\setcounter{enumi}{2}
-  \item Put the units in the column heading (not in the body of
-          the table).
-  \item Always precede a decimal point by a digit; thus 0.1
-      {\em not} just .1.
-  \item Do not use `ditto' signs or any other such convention to
-      repeat a previous value. In many circumstances a blank
-      will serve just as well. If it won't, then repeat the value.
-\end{enumerate}
-
-A frequently seen mistake is to use `\textbackslash begin\{center\}' \dots `\textbackslash end\{center\}' inside a figure or table environment. This center environment can cause additional vertical space. If you want to avoid that just use `\textbackslash centering'
+\section{Conclusion}
 
 
-\begin{table}
-\caption{A badly formatted table}
-\centering
-\label{table:bad_table}
-\begin{tabular}{|l|c|c|c|c|}
-\hline 
-& \multicolumn{2}{c}{Species I} & \multicolumn{2}{c|}{Species II} \\ 
-\hline
-Dental measurement  & mean & SD  & mean & SD  \\ \hline 
-\hline
-I1MD & 6.23 & 0.91 & 5.2  & 0.7  \\
-\hline 
-I1LL & 7.48 & 0.56 & 8.7  & 0.71 \\
-\hline 
-I2MD & 3.99 & 0.63 & 4.22 & 0.54 \\
-\hline 
-I2LL & 6.81 & 0.02 & 6.66 & 0.01 \\
-\hline 
-CMD & 13.47 & 0.09 & 10.55 & 0.05 \\
-\hline 
-CBL & 11.88 & 0.05 & 13.11 & 0.04\\ 
-\hline 
-\end{tabular}
-\end{table}
 
-\begin{table}
-\caption{A nice looking table}
-\centering
-\label{table:nice_table}
-\begin{tabular}{l c c c c}
-\hline 
-\multirow{2}{*}{Dental measurement} & \multicolumn{2}{c}{Species I} & \multicolumn{2}{c}{Species II} \\ 
-\cline{2-5}
-  & mean & SD  & mean & SD  \\ 
-\hline
-I1MD & 6.23 & 0.91 & 5.2  & 0.7  \\
+% % **************************** Define Graphics Path **************************
+% \ifpdf
+%     \graphicspath{{Chapter3/Figs/Raster/}{Chapter3/Figs/PDF/}{Chapter3/Figs/}}
+% \else
+%     \graphicspath{{Chapter3/Figs/Vector/}{Chapter3/Figs/}}
+% \fi
 
-I1LL & 7.48 & 0.56 & 8.7  & 0.71 \\
+% \section{First section of the third chapter}
+% And now I begin my third chapter here \dots
 
-I2MD & 3.99 & 0.63 & 4.22 & 0.54 \\
+% And now to cite some more people~\citet{Rea85,Ancey1996}
 
-I2LL & 6.81 & 0.02 & 6.66 & 0.01 \\
+% \subsection{First subsection in the first section}
+% \dots and some more 
 
-CMD & 13.47 & 0.09 & 10.55 & 0.05 \\
+% \subsection{Second subsection in the first section}
+% \dots and some more \dots
 
-CBL & 11.88 & 0.05 & 13.11 & 0.04\\ 
-\hline 
-\end{tabular}
-\end{table}
+% \subsubsection{First subsub section in the second subsection}
+% \dots and some more in the first subsub section otherwise it all looks the same
+% doesn't it? well we can add some text to it \dots
+
+% \subsection{Third subsection in the first section}
+% \dots and some more \dots
+
+% \subsubsection{First subsub section in the third subsection}
+% \dots and some more in the first subsub section otherwise it all looks the same
+% doesn't it? well we can add some text to it and some more and some more and
+% some more and some more and some more and some more and some more \dots
+
+% \subsubsection{Second subsub section in the third subsection}
+% \dots and some more in the first subsub section otherwise it all looks the same
+% doesn't it? well we can add some text to it \dots
+
+% \section{Second section of the third chapter}
+% and here I write more \dots
+
+% \section{The layout of formal tables}
+% This section has been modified from ``Publication quality tables in \LaTeX*''
+%  by Simon Fear.
+
+% The layout of a table has been established over centuries of experience and 
+% should only be altered in extraordinary circumstances. 
+
+% When formatting a table, remember two simple guidelines at all times:
+
+% \begin{enumerate}
+%   \item Never, ever use vertical rules (lines).
+%   \item Never use double rules.
+% \end{enumerate}
+
+% These guidelines may seem extreme but I have
+% never found a good argument in favour of breaking them. For
+% example, if you feel that the information in the left half of
+% a table is so different from that on the right that it needs
+% to be separated by a vertical line, then you should use two
+% tables instead. Not everyone follows the second guideline:
+
+% There are three further guidelines worth mentioning here as they
+% are generally not known outside the circle of professional
+% typesetters and subeditors:
+
+% \begin{enumerate}\setcounter{enumi}{2}
+%   \item Put the units in the column heading (not in the body of
+%           the table).
+%   \item Always precede a decimal point by a digit; thus 0.1
+%       {\em not} just .1.
+%   \item Do not use `ditto' signs or any other such convention to
+%       repeat a previous value. In many circumstances a blank
+%       will serve just as well. If it won't, then repeat the value.
+% \end{enumerate}
+
+% A frequently seen mistake is to use `\textbackslash begin\{center\}' \dots `\textbackslash end\{center\}' inside a figure or table environment. This center environment can cause additional vertical space. If you want to avoid that just use `\textbackslash centering'
 
 
-\begin{table}
-\caption{Even better looking table using booktabs}
-\centering
-\label{table:good_table}
-\begin{tabular}{l c c c c}
-\toprule
-\multirow{2}{*}{Dental measurement} & \multicolumn{2}{c}{Species I} & \multicolumn{2}{c}{Species II} \\ 
-\cmidrule{2-5}
-  & mean & SD  & mean & SD  \\ 
-\midrule
-I1MD & 6.23 & 0.91 & 5.2  & 0.7  \\
+% \begin{table}
+% \caption{A badly formatted table}
+% \centering
+% \label{table:bad_table}
+% \begin{tabular}{|l|c|c|c|c|}
+% \hline 
+% & \multicolumn{2}{c}{Species I} & \multicolumn{2}{c|}{Species II} \\ 
+% \hline
+% Dental measurement  & mean & SD  & mean & SD  \\ \hline 
+% \hline
+% I1MD & 6.23 & 0.91 & 5.2  & 0.7  \\
+% \hline 
+% I1LL & 7.48 & 0.56 & 8.7  & 0.71 \\
+% \hline 
+% I2MD & 3.99 & 0.63 & 4.22 & 0.54 \\
+% \hline 
+% I2LL & 6.81 & 0.02 & 6.66 & 0.01 \\
+% \hline 
+% CMD & 13.47 & 0.09 & 10.55 & 0.05 \\
+% \hline 
+% CBL & 11.88 & 0.05 & 13.11 & 0.04\\ 
+% \hline 
+% \end{tabular}
+% \end{table}
 
-I1LL & 7.48 & 0.56 & 8.7  & 0.71 \\
+% \begin{table}
+% \caption{A nice looking table}
+% \centering
+% \label{table:nice_table}
+% \begin{tabular}{l c c c c}
+% \hline 
+% \multirow{2}{*}{Dental measurement} & \multicolumn{2}{c}{Species I} & \multicolumn{2}{c}{Species II} \\ 
+% \cline{2-5}
+%   & mean & SD  & mean & SD  \\ 
+% \hline
+% I1MD & 6.23 & 0.91 & 5.2  & 0.7  \\
 
-I2MD & 3.99 & 0.63 & 4.22 & 0.54 \\
+% I1LL & 7.48 & 0.56 & 8.7  & 0.71 \\
 
-I2LL & 6.81 & 0.02 & 6.66 & 0.01 \\
+% I2MD & 3.99 & 0.63 & 4.22 & 0.54 \\
 
-CMD & 13.47 & 0.09 & 10.55 & 0.05 \\
+% I2LL & 6.81 & 0.02 & 6.66 & 0.01 \\
 
-CBL & 11.88 & 0.05 & 13.11 & 0.04\\ 
-\bottomrule
-\end{tabular}
-\end{table}
+% CMD & 13.47 & 0.09 & 10.55 & 0.05 \\
+
+% CBL & 11.88 & 0.05 & 13.11 & 0.04\\ 
+% \hline 
+% \end{tabular}
+% \end{table}
+
+
+% \begin{table}
+% \caption{Even better looking table using booktabs}
+% \centering
+% \label{table:good_table}
+% \begin{tabular}{l c c c c}
+% \toprule
+% \multirow{2}{*}{Dental measurement} & \multicolumn{2}{c}{Species I} & \multicolumn{2}{c}{Species II} \\ 
+% \cmidrule{2-5}
+%   & mean & SD  & mean & SD  \\ 
+% \midrule
+% I1MD & 6.23 & 0.91 & 5.2  & 0.7  \\
+
+% I1LL & 7.48 & 0.56 & 8.7  & 0.71 \\
+
+% I2MD & 3.99 & 0.63 & 4.22 & 0.54 \\
+
+% I2LL & 6.81 & 0.02 & 6.66 & 0.01 \\
+
+% CMD & 13.47 & 0.09 & 10.55 & 0.05 \\
+
+% CBL & 11.88 & 0.05 & 13.11 & 0.04\\ 
+% \bottomrule
+% \end{tabular}
+% \end{table}
